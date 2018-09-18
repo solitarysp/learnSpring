@@ -1,4 +1,4 @@
 package com.higgsup.ioc_example.ioc;
 
-public interface IocSpellChecker {
+public interface Type {
 }
