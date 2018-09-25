@@ -12,13 +12,18 @@ import org.springframework.context.annotation.ComponentScan;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Main.class);
-        BaseService baseService = (BaseService) applicationContext.getBean("studentALL4ServiceImpl");
+    /*    BaseService baseService = (BaseService) applicationContext.getBean("studentALL4ServiceImpl");
         baseService.request();
 
         DiConstructor baseDI = (DiConstructor) applicationContext.getBean("diConstructor");
         System.out.println(baseDI.toString());;
 
         DTOService dTOService = (DTOService) applicationContext.getBean("DTOService");
+
+
+        //
+
+        System.out.println(applicationContext.getApplicationName());*/
 
     }
 }
