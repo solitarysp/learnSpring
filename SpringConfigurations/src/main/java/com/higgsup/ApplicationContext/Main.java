@@ -1,5 +1,6 @@
 package com.higgsup.ApplicationContext;
 
+import com.higgsup.ApplicationContext.bean.BeanPostProcessorTest;
 import com.higgsup.ApplicationContext.bean.EvenPublisherBean2;
 import com.higgsup.ApplicationContext.bean.MyEvenPublisherBean;
 import org.springframework.context.ApplicationContext;
@@ -17,9 +18,10 @@ import java.util.Locale;
 public class Main {
     public static void main(String[] args) throws IOException {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Main.class);
-       applicationEventPublisherTest(applicationContext);
+     //  applicationEventPublisherTest(applicationContext);
        // resourceTest(applicationContext);
        //mssageSourceTest(applicationContext);
+        BeanPostProcessorTest beanPostProcessorTest= applicationContext.getBean("beanPostProcessorTest",BeanPostProcessorTest.class);
     }
 
     private static void mssageSourceTest(ApplicationContext applicationContext) {
