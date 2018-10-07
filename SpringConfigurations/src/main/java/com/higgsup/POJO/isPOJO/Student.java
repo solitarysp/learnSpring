@@ -1,4 +1,4 @@
-package com.higgsup.POJO;
+package com.higgsup.POJO.isPOJO;
 
 public class Student {
     private String id;
