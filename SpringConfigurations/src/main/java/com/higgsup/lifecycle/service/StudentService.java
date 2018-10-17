@@ -1,5 +1,6 @@
 package com.higgsup.lifecycle.service;
 
+import com.higgsup.lifecycle.conditional.InMonth10;
 import com.higgsup.lifecycle.service.config.BaseService;
 import com.higgsup.lifecycle.service.config.RootService;
 import org.springframework.beans.BeansException;
@@ -7,9 +8,11 @@ import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
 
 @Service
+@Conditional({InMonth10.class})
 public class StudentService implements BeanNameAware, BeanClassLoaderAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean, BaseService {
     AddressService addressService;
     RootService rootService;
