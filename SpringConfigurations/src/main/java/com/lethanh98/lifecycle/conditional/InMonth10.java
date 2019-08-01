@@ -11,7 +11,7 @@ public class InMonth10 implements Condition {
     @Override
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
         LocalDate localDate = LocalDate.now();
-        if (localDate.getMonth().getValue() == 10) {
+        if (localDate.getMonth().getValue() == 7) {
             return true;
         }
         return false;

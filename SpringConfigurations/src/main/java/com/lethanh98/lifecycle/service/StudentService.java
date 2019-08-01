@@ -21,17 +21,20 @@ public class StudentService implements BeanNameAware, BeanClassLoaderAware, Bean
     ApplicationContext applicationContext;
 
     public StudentService() {
+        // gọi đầu tiên để tạo object
         System.out.println("Gọi 1");
     }
 
     @Autowired
     public void setAddressService(AddressService addressService) {
+        // inject các dep vào
         System.out.println("Gọi 2 set addressService");
         this.addressService = addressService;
     }
 
     @Autowired
     public void setRootService(RootService rootService) {
+        // inject các dep vào
         System.out.println("Gọi 2 set rootService");
 
         this.rootService = rootService;
@@ -39,8 +42,9 @@ public class StudentService implements BeanNameAware, BeanClassLoaderAware, Bean
 
     @Override
     public void setBeanName(String name) {
+        // set name của bean
         // param name sẽ là name của bean này
-        System.out.println("Gọi 3");
+        System.out.println("Gọi 3"+name);
     }
 
     @Override
@@ -52,17 +56,20 @@ public class StudentService implements BeanNameAware, BeanClassLoaderAware, Bean
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        // set bean factory
         System.out.println("Gọi 5");
 
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        // set bean đến contex quản lý
         System.out.println("Gọi 6");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        // gọi trước khi các thuộc tính khác được set
         System.out.println("Gọi 8");
 
     }
