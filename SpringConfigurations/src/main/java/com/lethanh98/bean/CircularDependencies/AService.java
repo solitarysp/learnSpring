@@ -1,6 +1,7 @@
 package com.lethanh98.bean.CircularDependencies;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,10 @@ public class AService{
 
     public AService(BService bService) {
         this.bService = bService;
+    }
+    @Required
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {
