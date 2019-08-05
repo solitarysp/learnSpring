@@ -1,5 +1,7 @@
 package com.lethanh98.bean.Resource;
 
+import org.springframework.context.annotation.Bean;
+
 public class ServiceA {
     private String name;
 
