@@ -2,6 +2,7 @@ package com.lethanh98.bean.fullandliteBeanModel.fullmodel;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 /**
  * author lethanh9398 <p>
