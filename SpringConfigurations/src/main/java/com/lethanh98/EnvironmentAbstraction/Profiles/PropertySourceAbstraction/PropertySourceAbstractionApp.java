@@ -1,6 +1,5 @@
 package com.lethanh98.EnvironmentAbstraction.Profiles.PropertySourceAbstraction;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.env.Environment;
 
@@ -14,7 +13,13 @@ import org.springframework.core.env.Environment;
  */
 public class PropertySourceAbstractionApp {
     public static void main(String[] args) {
-        ApplicationContext ctx = new GenericApplicationContext();
+        GenericApplicationContext ctx = new GenericApplicationContext();
+        checkProperTy(ctx);
+    }
+
+    private static void checkProperTy(GenericApplicationContext ctx) {
         Environment env = ctx.getEnvironment();
+        boolean containsMyProperty = env.containsProperty("my-property");
+        System.out.println("Does my environment contain the 'my-property' property? " + containsMyProperty);
     }
 }
