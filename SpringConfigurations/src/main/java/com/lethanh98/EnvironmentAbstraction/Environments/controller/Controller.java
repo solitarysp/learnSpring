@@ -1,4 +1,4 @@
-package com.lethanh98.ProfilesEnvironments.Environments.controller;
+package com.lethanh98.EnvironmentAbstraction.Environments.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.ConfigurableEnvironment;

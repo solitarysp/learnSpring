@@ -1,12 +1,12 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.base;
+package com.lethanh98.EnvironmentAbstraction.Profiles.base;
 
-import com.lethanh98.ProfilesEnvironments.Profiles.base.factory.Setting;
-import com.lethanh98.ProfilesEnvironments.Profiles.base.factory.SqlFactory;
+import com.lethanh98.EnvironmentAbstraction.Profiles.base.factory.Setting;
+import com.lethanh98.EnvironmentAbstraction.Profiles.base.factory.SqlFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.AbstractEnvironment;
 
-@ComponentScan("com.lethanh98.ProfilesEnvironments.Profiles")
+@ComponentScan("com.lethanh98.EnvironmentAbstraction.Profiles")
 public class Main {
 
 

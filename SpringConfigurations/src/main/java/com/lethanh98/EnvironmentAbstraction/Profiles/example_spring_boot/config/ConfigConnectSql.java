@@ -1,6 +1,6 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.example_spring_boot.config;
+package com.lethanh98.EnvironmentAbstraction.Profiles.example_spring_boot.config;
 
-import com.lethanh98.ProfilesEnvironments.Profiles.example_spring_boot.factory.SqlFactory;
+import com.lethanh98.EnvironmentAbstraction.Profiles.example_spring_boot.factory.SqlFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;

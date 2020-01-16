@@ -1,4 +1,4 @@
-package com.lethanh98.ProfilesEnvironments.Environments;
+package com.lethanh98.EnvironmentAbstraction.Environments;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

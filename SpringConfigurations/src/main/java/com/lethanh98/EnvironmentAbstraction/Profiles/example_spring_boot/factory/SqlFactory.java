@@ -1,4 +1,4 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.example_spring_boot.factory;
+package com.lethanh98.EnvironmentAbstraction.Profiles.example_spring_boot.factory;
 
 public class SqlFactory {
     private String name;

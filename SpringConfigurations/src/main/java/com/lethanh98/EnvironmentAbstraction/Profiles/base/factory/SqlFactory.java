@@ -1,4 +1,4 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.base.factory;
+package com.lethanh98.EnvironmentAbstraction.Profiles.base.factory;
 
 public class SqlFactory {
     private String name;

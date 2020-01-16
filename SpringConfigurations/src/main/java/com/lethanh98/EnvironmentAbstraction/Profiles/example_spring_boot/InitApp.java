@@ -1,4 +1,4 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.example_spring_boot;
+package com.lethanh98.EnvironmentAbstraction.Profiles.example_spring_boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

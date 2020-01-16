@@ -1,7 +1,7 @@
-package com.lethanh98.ProfilesEnvironments.Profiles.base.service;
+package com.lethanh98.EnvironmentAbstraction.Profiles.base.service;
 
-import com.lethanh98.ProfilesEnvironments.Profiles.base.factory.Setting;
-import com.lethanh98.ProfilesEnvironments.Profiles.base.factory.SqlFactory;
+import com.lethanh98.EnvironmentAbstraction.Profiles.base.factory.Setting;
+import com.lethanh98.EnvironmentAbstraction.Profiles.base.factory.SqlFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
