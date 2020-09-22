@@ -11,6 +11,7 @@
     <modules>
         <module>SpringConfigurations</module>
         <module>SpringResources</module>
+        <module>ValidatorBinding</module>
     </modules>
 
 
